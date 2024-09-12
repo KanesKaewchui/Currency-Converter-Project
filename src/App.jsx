@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Select from 'react-select';
-import { currencyOptions } from "./currencyOptions"; 
+import { currencyOptions } from "./CurrencyOptions"; 
 
 export default function App() {
   const [fromCurrency, setFromCurrency] = useState(currencyOptions[0]);
