@@ -37,61 +37,6 @@ export default function App() {
   };
 
   return (
-    // <div className="min-h-screen flex items-center justify-center bg-gray-100">
-    //   <div className="bg-white w-1/5 p-8 rounded shadow-md">
-    //     <h1 className="text-2xl mb-4">Currency Converter</h1>
-
-    //     <div className="mb-4">
-    //       <label className="block mb-2">From:</label>
-    //       <Select
-    //         value={fromCurrency}
-    //         onChange={(selectedOption) => setFromCurrency(selectedOption)}
-    //         options={currencyOptions}
-    //         getOptionLabel={(e) => (
-    //           <div className="flex items-center">
-    //             <img src={e.icon} alt="" className="w-8 h-5 mr-2" />
-    //             {e.label}
-    //           </div>
-    //         )}
-    //       />
-    //     </div>
-
-    //     <div className="mb-4">
-    //       <label className="block mb-2">To:</label>
-    //       <Select
-    //         value={toCurrency}
-    //         onChange={(selectedOption) => setToCurrency(selectedOption)}
-    //         options={currencyOptions}
-    //         getOptionLabel={(e) => (
-    //           <div className="flex items-center">
-    //             <img src={e.icon} alt="" className="w-8 h-5 mr-2" />
-    //             {e.label}
-    //           </div>
-    //         )}
-    //       />
-    //     </div>
-
-    //     <div className="mb-4">
-    //       <label className="block mb-2">Amount:</label>
-    //       <input
-    //         type="number"
-    //         value={amount}
-    //         onChange={(e) => setAmount(e.target.valueAsNumber)}
-    //         className="w-full p-2 border bg-white"
-    //       />
-    //     </div>
-
-    //     <button
-    //       onClick={handleConvert}
-    //       className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    //     >
-    //       Convert
-    //     </button>
-
-    //     {result && <p className="text-lg mt-4">Result: {result}</p>}
-    //     {error && <p className="text-red-500 mt-4">Error: {error}</p>}
-    //   </div>
-    // </div>
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
       <div className="bg-white w-full max-w-md p-8 rounded-lg shadow-lg">
         <h1 className="text-3xl font-semibold text-center mb-6 text-blue-800">
@@ -142,7 +87,7 @@ export default function App() {
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.valueAsNumber)}
-            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-100 text-gray-700"
           />
         </div>
 
@@ -153,7 +98,7 @@ export default function App() {
         </button>
 
         {result && (
-          <p className="text-xl mt-6 text-center font-semibold text-blue-800">
+          <p className="text-xl mt-6 text-center font-semibold text-blue-500">
             Result: {result}
           </p>
         )}
